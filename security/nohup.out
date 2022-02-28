@@ -1,0 +1,266 @@
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [06/Jan/2022 21:11:25] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 21:11:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Jan/2022 21:13:41] "[37mGET / HTTP/1.1[0m" 200 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [06/Jan/2022 21:41:30] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 21:43:47] "[33mPOST /signup_V1 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Jan/2022 21:44:24] "[33mPOST /signupv1 HTTP/1.1[0m" 404 -
+[2022-01-06 21:45:05,580] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_V1
+    c.execute('''Ceate table if not exists user_plain
+sqlite3.OperationalError: near "Ceate": syntax error
+127.0.0.1 - - [06/Jan/2022 21:45:05] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+[2022-01-06 21:46:05,143] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_V1
+    c.execute('''Ceate table if not exists user_plain
+sqlite3.OperationalError: near "Ceate": syntax error
+127.0.0.1 - - [06/Jan/2022 21:46:05] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 21:51:51,249] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_V1
+    c.execute('''CREATE TABKE IF NOT EXISTS USER_PLAIN(USERNAME TEXT PRIMARY KEY NOT NULL, PASSWORD TEXT NOT NULL);''') # create the table
+sqlite3.OperationalError: near "TABKE": syntax error
+127.0.0.1 - - [06/Jan/2022 21:51:51] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 21:54:10,199] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_V1
+    c.execute('''CREATE TABKE IF NOT EXISTS USER_PLAIN(USERNAME TEXT PRIMARY KEY NOT NULL, PASSWORD TEXT NOT NULL);''') # create the table
+sqlite3.OperationalError: near "TABKE": syntax error
+127.0.0.1 - - [06/Jan/2022 21:54:10] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 21:55:48,546] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_V1
+    c.execute('''CREATE TABKE IF NOT EXISTS USER_PLAIN(USERNAME TEXT PRIMARY KEY NOT NULL, PASSWORD TEXT NOT NULL);''') # create the table
+sqlite3.OperationalError: near "TABKE": syntax error
+127.0.0.1 - - [06/Jan/2022 21:55:48] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 22:02:09,119] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_v1
+    c.execute('''CREATE TABKE IF NOT EXISTS USER_PLAIN (USERNAME TEXT PRIMARY KEY NOT NULL, PASSWORD TEXT NOT NULL)''') # create the table
+sqlite3.OperationalError: near "TABKE": syntax error
+127.0.0.1 - - [06/Jan/2022 22:02:09] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 22:08:06,473] ERROR in app: Exception on /signup/v1 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 24, in signup_v1
+    c.execute('''CREATE TABKE IF NOT EXISTS USER_PLAIN (USERNAME TEXT PRIMARY KEY NOT NULL, PASSWORD TEXT NOT NULL)''') # create the table
+sqlite3.OperationalError: near "TABKE": syntax error
+127.0.0.1 - - [06/Jan/2022 22:08:06] "[35m[1mPOST /signup/v1 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [06/Jan/2022 22:10:07] "[37mPOST /signup/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 22:10:42] "[37mPOST /login/v1 HTTP/1.1[0m" 200 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 22:25:11,440] ERROR in app: Exception on /login/v2 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 85, in login_V2
+    if varify_hash(request.form['username'], request.form['password']):
+  File "password-evolution.py", line 74, in varify_hash
+    c.execute(query)
+sqlite3.OperationalError: no such table: USER_HASH
+127.0.0.1 - - [06/Jan/2022 22:25:11] "[35m[1mPOST /login/v2 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 22:27:26,509] ERROR in app: Exception on /login/v2 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 85, in login_V2
+    if varify_hash(request.form['username'], request.form['password']):
+  File "password-evolution.py", line 74, in varify_hash
+    c.execute(query)
+sqlite3.OperationalError: no such table: USER_HASH
+127.0.0.1 - - [06/Jan/2022 22:27:26] "[35m[1mPOST /login/v2 HTTP/1.1[0m" 500 -
+ * Serving Flask app "password-evolution" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2022-01-06 22:34:41,092] ERROR in app: Exception on /login/v2 [POST]
+Traceback (most recent call last):
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "password-evolution.py", line 86, in login_V2
+    if verify_hash(request.form['username'], request.form['password']):
+  File "password-evolution.py", line 75, in verify_hash
+    c.execute(query)
+sqlite3.OperationalError: no such table: USER_HASH
+127.0.0.1 - - [06/Jan/2022 22:34:41] "[35m[1mPOST /login/v2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [06/Jan/2022 22:35:34] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 22:37:10] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 22:38:05] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 22:40:09] "[37mPOST /login/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 22:40:59] "[37mPOST /login/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Jan/2022 22:41:31] "[37mPOST /login/v2 HTTP/1.1[0m" 200 -
